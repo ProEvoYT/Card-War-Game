@@ -50,8 +50,9 @@ function restartGame() {
 }
 
 function updateName(event) {
-  event.preventDefault(); // Stops the page refresh
-  playerName = document.getElementById("player-name").value || "Player";
+  event.preventDefault(); // Stops page refresh
+  playerName = document.getElementById("player-name").value || "Player"; // Use input or default
   document.getElementById("player-score-label").textContent = playerName;
+  document.appendChild(document.getElementById("player-score"));
   document.getElementById("player-name").value = ""; // Clear input
 }
