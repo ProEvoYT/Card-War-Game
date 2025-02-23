@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+#game {
+  text-align: center;
+  margin-top: 20px;
+}
+#player-card,
+#computer-card {
+  width: 100px;
+  height: 150px;
+  border: 2px solid black;
+  display: inline-block;
+  margin: 10px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 150px;
+  background-color: white;
+}
+
+#player-card {
+  border: 2px solid blue;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: lightblue;
+}
+
+#computer-card {
+  border: 2px solid red;
+  font-weight: bold;
+  background-color: rgb(216, 62, 62);
+}
+
+#player-card:hover {
+  background-color: white;
+}
+
+#computer-card:hover {
+  background-color: white;
+}
+
+button {
+  padding: 10px 30px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: thick;
+  cursor: pointer;
+}
+
+#draw {
+  background-color: #4caf50;
+  border: 2px solid black;
+}
+
+#draw:hover {
+  background-color: darkred;
+}
+
+#restart {
+  background-color: #4caf50;
+  border: 2px solid black;
+}
+
+#restart:hover {
+  background-color: darkred;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+#name-form {
+  margin: 20px 0;
+}
+#player-name {
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+#name-form button {
+  background-color: #555555; /* Dark gray submit button */
+  border: 2px solid #333333;
+  margin-left: 10px;
+}
+#name-form button:hover {
+  background-color: #444444;
+}
